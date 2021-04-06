@@ -1,0 +1,11 @@
+
+import crontab
+
+cnt = 100
+n = 0
+
+while n < cnt:
+    n++;
+    echo sleep 1;
+    echo python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }};
+    
