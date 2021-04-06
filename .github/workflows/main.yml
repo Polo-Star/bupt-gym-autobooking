@@ -38,11 +38,7 @@ jobs:
           cd .github/bupt-gym-reserve/
           pip3 install -r requirements.txt
           
-          for ((i=1; i<=100; i++)) {
-            do python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }}; 
-            sleep 1s;
-          } 
-          done;
+          for ((i=1; i<=1000; i++)) do python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }}; sleep 1s; done;
           
           
       # Runs a set of commands using the runners shell
