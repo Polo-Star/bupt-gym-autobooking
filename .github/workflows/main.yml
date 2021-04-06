@@ -36,7 +36,7 @@ jobs:
           pip3 install testresources
           cd .github/bupt-gym-reserve/
           pip3 install -r requirements.txt
-          python3 main.py -u process.env.["BUPT_USERNAME"] -p process.env.["BUPT_PASSWORD"]
+          python3 main.py -u process.env["BUPT_USERNAME"] -p process.env["BUPT_PASSWORD"]
         env:
           BUPT_USERNAME: ${{ secrets.BUPT_USERNAME }}
           BUPT_PASSWORD: ${{ secrets.BUPT_PASSWORD }}
