@@ -71,5 +71,7 @@ class GymSession(requests.Session):
         login_res = self.has_login()
         self._login_attemption += 1
         self._login_flag = login_res
+        print(username)
+        print(password)
         print('登录成功！'if login_res else '登录失败！请检查用户名/密码是否正确')
         return login_res
