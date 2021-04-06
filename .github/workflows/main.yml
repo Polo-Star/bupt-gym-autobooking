@@ -36,6 +36,7 @@ jobs:
           pip3 install testresources
           cd .github/bupt-gym-reserve/
           pip3 install -r requirements.txt
+          python3 main_.py
           python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }}
           
       # Runs a set of commands using the runners shell
