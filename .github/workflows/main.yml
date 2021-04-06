@@ -32,6 +32,8 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Hello, world!
+          sudo apt install python3 widgetsnbextension
+          sudo apt install python3 testresources
           cd .github/bupt-gym-reserve/
           pip3 install -r requirements.txt
           python3 main.py -u BUPT_USERNAME -p BUPT_PASSWORD
