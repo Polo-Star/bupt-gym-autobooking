@@ -1,4 +1,4 @@
-
+import os
 import crontab
 import time
 
@@ -8,5 +8,5 @@ n = 0
 while n < cnt:
     n = n + 1;
     time.sleep(2)
-    echo python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }};
+    os.system("python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }};");
     
