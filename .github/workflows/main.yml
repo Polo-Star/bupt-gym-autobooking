@@ -32,10 +32,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Hello, world!
-          pwd
-          ls
-          cd bupt-gym-reserve
-          ls
+          cd .github/bupt-gym-reserve/
           pip3 install -r requirements.txt
           python3 main.py -u BUPT_USERNAME -p BUPT_PASSWORD
         env:
