@@ -33,7 +33,10 @@ jobs:
         run: |
           echo Hello, world!
           pwd
-          cd bupt-gym-reserve && pip3 install -r requirements.txt
+          ls
+          cd bupt-gym-reserve
+          ls
+          pip3 install -r requirements.txt
           python3 main.py -u BUPT_USERNAME -p BUPT_PASSWORD
         env:
           BUPT_USERNAME: ${{ secrets.BUPT_USERNAME }}
