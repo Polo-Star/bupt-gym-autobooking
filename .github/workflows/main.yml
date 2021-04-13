@@ -38,6 +38,9 @@ jobs:
           cd .github/bupt-gym-reserve/
           pip3 install -r requirements.txt
           
+          python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }};
+          sleep(1.1)
+          
           for ((i=1; i<=1000; i++)) do python3 main.py -u ${{ secrets.BUPT_USERNAME }} -p ${{ secrets.BUPT_PASSWORD }}; done;
           
           
